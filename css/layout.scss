@@ -247,6 +247,12 @@ body{
 	/* min-width: 1200px; */
 	min-width: 1170px;
 }
+a{
+	cursor: pointer !important;
+}
+input[type="submit"],button{
+	cursor: pointer !important;
+}
 .main{
 	background-image: url(../images/mainbg.jpg);
 	background-position: center top;
@@ -565,7 +571,7 @@ a.more{
 	margin-bottom: 30px;
 	.label{
 		position: absolute;
-		z-index: 10;
+		z-index: 1;
 		/*
 		left: -12px;
 		bottom: 50px;
@@ -600,6 +606,7 @@ a.more{
 			}
 			.bx-pager{
 				text-align: right;
+				z-index: 10;
 				.bx-pager-item{
 					a{
 						text-indent: 99999px;
@@ -1068,7 +1075,6 @@ a.more{
 }
 .agent-group{
 	margin-top: 15px;
-	margin-bottom: 15px;
 	border-radius: 10px;
 	overflow: hidden;
 	box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.40);
@@ -1245,7 +1251,7 @@ a.more{
 			
 			
 			-webkit-appearance: button;
-		    -moz-appearance: button;
+		    -moz-appearance: none;
 		    -webkit-user-select: none;
 		    -moz-user-select: none;
 		    -webkit-padding-end: 15px;
@@ -1264,8 +1270,8 @@ a.more{
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40c4de', endColorstr='#0051cb',GradientType=0 ); /* IE6-9 */
 			background-position: right center;
 			background-repeat: no-repeat;
-			
-			font-size: 22px;
+			background-color: rgba(199, 199, 199, 1);
+			font-size: 22px !important;
 			font-family: 'thaisans_neueregular';
 			
 			
@@ -1333,8 +1339,7 @@ h2.center-title{
 		font-size: 15px;
 		//color: #6d6e70;
 		text-align: justify;
-		text-indent: 30px;
-		
+		text-indent: 0px;
 		
 	}
 	ol{
